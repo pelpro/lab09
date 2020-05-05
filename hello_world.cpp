@@ -1,7 +1,8 @@
 #include <iostream>
 #include <string>
-using namespace std;
 int main(){
-cout<<"Hello World!";
+std::string name;
+std::cin>>name;
+std::cout<<"Hello World from "<<name;
 return 0;
 }
