@@ -1,8 +1,9 @@
 language: cpp
 
 script:
-- cmake . 
-- make
+- cmake -H. -B_build -DBUILD_TESTS=ON 
+- cmake --build _build
+- cmake --build _build --target test -- ARGS=--verbose
 addons:
   apt:
     sources:
@@ -10,3 +11,7 @@ addons:
     packages:
       - cmake
       - cmake-data
+before_script:
+- pip install --user cpp-coveralls
+after_script:
+- coveralls --exclude lib --exclude tests --gcov-options '\-lp'
