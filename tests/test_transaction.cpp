@@ -75,8 +75,9 @@ TEST(Transaction, TransactionNotEnoughFunds)
         Transaction transaction;
         transaction.Make(first, second, 1500);
 
-	EXPECT_EQ(petya.GetBalance(), 1000);
-        EXPECT_EQ(vasya.GetBalance(), 1000);
+	EXPECT_EQ(first.GetBalance(), 1000);
+        EXPECT_EQ(second
+		  .GetBalance(), 1000);
 
 }
 
