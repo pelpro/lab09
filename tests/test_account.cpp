@@ -20,8 +20,8 @@ TEST(Account, AccountTestAll)
 
 	EXPECT_EQ(first.id(), 1);
 
-	EXPECT_NO_THROW(dimka.Unlock());
-	EXPECT_NO_THROW(dimka.Unlock());
+	EXPECT_NO_THROW(first.Unlock());
+	EXPECT_NO_THROW(first.Unlock());
 	EXPECT_EQ(first.id(), 1);
 	EXPECT_EQ(first.GetBalance(), 1500);
 	EXPECT_THROW(first.ChangeBalance(500), std::runtime_error);
