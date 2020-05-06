@@ -54,7 +54,6 @@ bool Transaction::Debit(Account& accout, int sum) {
     accout.ChangeBalance(-sum);
     return true;
   }
-  return false;
 }
 
 void Transaction::SaveToDataBase(Account& from, Account& to, int sum) {
