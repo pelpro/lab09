@@ -4,14 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/a17661665/Git/pelpro/workspace/projects/lab07/solver_application/equation.cpp" "/Users/a17661665/Git/pelpro/workspace/projects/lab07/solver_application/CMakeFiles/equation.dir/equation.cpp.o"
+  "/Users/a17661665/Git/pelpro/workspace/projects/lab09/solver_application/equation.cpp" "/Users/a17661665/Git/pelpro/workspace/projects/lab09/solver_application/CMakeFiles/equation.dir/equation.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../../formatter_ex_lib"
-  "../../solver_lib"
+  "../formatter_ex_lib"
+  "../solver_lib"
   )
 
 # Targets to which this target links.

@@ -1,4 +1,4 @@
-# Install script for directory: /Users/a17661665/Git/pelpro/workspace/projects/lab07/hello_world_application
+# Install script for directory: /Users/a17661665/Git/pelpro/workspace/projects/lab09/hello_world_application
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
