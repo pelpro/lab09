@@ -13,7 +13,7 @@ deploy:
   on:
     repo: pelpro/lab06
     tags: true
-  skip_cleanup: 'true'
+  skip_cleanup: true
 addons:
   apt:
     sources:
