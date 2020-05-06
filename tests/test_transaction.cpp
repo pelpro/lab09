@@ -31,7 +31,7 @@ TEST(Transaction, TransactionMock)
                 .Times(1);
         EXPECT_CALL(first, ChangeBalance(-100))
                 .Times(1);
-        EXPECT_CALL(firsy, Unlock())
+        EXPECT_CALL(first, Unlock())
                 .Times(1);
         EXPECT_CALL(second, Unlock())
                 .Times(1);
