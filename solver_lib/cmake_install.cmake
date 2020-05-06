@@ -1,4 +1,4 @@
-# Install script for directory: /Users/a17661665/Git/pelpro/workspace/projects/lab06/solver_lib
+# Install script for directory: /Users/a17661665/Git/pelpro/workspace/projects/lab07/solver_lib
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -1,0 +1,94 @@
+Execute command: [
+  `which`
+  `cmake`
+]
+[/Users/a17661665/Git/pelpro/workspace/projects/lab07]> "which" "cmake"
+/usr/local/bin/cmake
+Execute command: [
+  `cmake`
+  `--version`
+]
+[/Users/a17661665/Git/pelpro/workspace/projects/lab07]> "cmake" "--version"
+cmake version 3.17.2
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+Execute command: [
+  `cmake`
+  `-H.`
+  `-B/Users/a17661665/Git/pelpro/workspace/projects/lab07/_builds/default`
+  `-DCMAKE_TOOLCHAIN_FILE=/Users/a17661665/Git/pelpro/workspace/projects/lab07/tools/polly/default.cmake`
+]
+[/Users/a17661665/Git/pelpro/workspace/projects/lab07]> "cmake" "-H." "-B/Users/a17661665/Git/pelpro/workspace/projects/lab07/_builds/default" "-DCMAKE_TOOLCHAIN_FILE=/Users/a17661665/Git/pelpro/workspace/projects/lab07/tools/polly/default.cmake"
+-- [polly] Used toolchain: Default
+-- The C compiler identification is AppleClang 11.0.0.11000033
+-- The CXX compiler identification is AppleClang 11.0.0.11000033
+-- Check for working C compiler: /Library/Developer/CommandLineTools/usr/bin/cc
+-- Check for working C compiler: /Library/Developer/CommandLineTools/usr/bin/cc - works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /Library/Developer/CommandLineTools/usr/bin/c++
+-- Check for working CXX compiler: /Library/Developer/CommandLineTools/usr/bin/c++ - works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- [hunter] Calculating Toolchain-SHA1
+-- [hunter] Calculating Config-SHA1
+-- [hunter] HUNTER_ROOT: /Users/a17661665/projects/hunter
+-- [hunter] [ Hunter-ID: xxxxxxx | Toolchain-ID: b8cde86 | Config-ID: b97958b ]
+-- [hunter] GTEST_ROOT: /Users/a17661665/projects/hunter/_Base/xxxxxxx/b8cde86/b97958b/Install (ver.: 1.10.0)
+-- [hunter] NLOHMANN_JSON_ROOT: /Users/a17661665/projects/hunter/_Base/xxxxxxx/b8cde86/b97958b/Install (ver.: 3.7.0)
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/a17661665/Git/pelpro/workspace/projects/lab07/_builds/default
+Execute command: [
+  `cmake`
+  `--build`
+  `/Users/a17661665/Git/pelpro/workspace/projects/lab07/_builds/default`
+  `--`
+]
+[/Users/a17661665/Git/pelpro/workspace/projects/lab07]> "cmake" "--build" "/Users/a17661665/Git/pelpro/workspace/projects/lab07/_builds/default" "--"
+Scanning dependencies of target print
+[  7%] Building CXX object CMakeFiles/print.dir/sources/print.cpp.o
+[ 14%] Linking CXX static library libprint.a
+[ 14%] Built target print
+Scanning dependencies of target demo
+[ 21%] Building CXX object CMakeFiles/demo.dir/demo/main.cpp.o
+[ 28%] Linking CXX executable demo
+[ 28%] Built target demo
+[ 35%] Building CXX object ../../formatter_lib/CMakeFiles/formatter.dir/formatter.cpp.o
+[ 42%] Linking CXX static library libformatter.a
+[ 42%] Built target formatter
+Scanning dependencies of target formatter_ex
+[ 50%] Building CXX object ../../formatter_ex_lib/CMakeFiles/formatter_ex.dir/formatter_ex.cpp.o
+[ 57%] Linking CXX static library libformatter_ex.a
+[ 57%] Built target formatter_ex
+[ 64%] Building CXX object ../../solver_lib/CMakeFiles/solver.dir/solver.cpp.o
+[ 71%] Linking CXX static library libsolver.a
+[ 71%] Built target solver
+Scanning dependencies of target hello_world
+[ 78%] Building CXX object ../../hello_world_application/CMakeFiles/hello_world.dir/hello_world.cpp.o
+[ 85%] Linking CXX executable hello_world
+[ 85%] Built target hello_world
+Scanning dependencies of target equation
+[ 92%] Building CXX object ../../solver_application/CMakeFiles/equation.dir/equation.cpp.o
+[100%] Linking CXX executable equation
+[100%] Built target equation
+Execute command: [
+  `ctest`
+]
+[/Users/a17661665/Git/pelpro/workspace/projects/lab07/_builds/default]> "ctest"
+*********************************
+No test configuration file found!
+*********************************
+Usage
+
+  ctest [options]
+

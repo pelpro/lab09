@@ -1,0 +1,477 @@
+Execute command: [
+  `which`
+  `cmake`
+]
+[/Users/a17661665/Git/pelpro/workspace/projects/lab07]> "which" "cmake"
+/usr/local/bin/cmake
+Execute command: [
+  `cmake`
+  `--version`
+]
+[/Users/a17661665/Git/pelpro/workspace/projects/lab07]> "cmake" "--version"
+cmake version 3.17.2
+
+CMake suite maintained and supported by Kitware (kitware.com/cmake).
+Execute command: [
+  `cmake`
+  `-H.`
+  `-B/Users/a17661665/Git/pelpro/workspace/projects/lab07/_builds/clang-cxx14`
+  `-GUnix Makefiles`
+  `-DCMAKE_TOOLCHAIN_FILE=/Users/a17661665/Git/pelpro/workspace/projects/lab07/tools/polly/clang-cxx14.cmake`
+]
+[/Users/a17661665/Git/pelpro/workspace/projects/lab07]> "cmake" "-H." "-B/Users/a17661665/Git/pelpro/workspace/projects/lab07/_builds/clang-cxx14" "-GUnix Makefiles" "-DCMAKE_TOOLCHAIN_FILE=/Users/a17661665/Git/pelpro/workspace/projects/lab07/tools/polly/clang-cxx14.cmake"
+-- [polly] Used toolchain: clang / c++14 support
+-- The C compiler identification is AppleClang 11.0.0.11000033
+-- The CXX compiler identification is AppleClang 11.0.0.11000033
+-- Check for working C compiler: /usr/bin/clang
+-- Check for working C compiler: /usr/bin/clang - works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/clang++
+-- Check for working CXX compiler: /usr/bin/clang++ - works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- [hunter] Calculating Toolchain-SHA1
+-- [hunter] Calculating Config-SHA1
+-- [hunter] HUNTER_ROOT: /Users/a17661665/projects/hunter
+-- [hunter] [ Hunter-ID: xxxxxxx | Toolchain-ID: 2e00d17 | Config-ID: b97958b ]
+-- [hunter] GTEST_ROOT: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Install (ver.: 1.10.0)
+-- [hunter] Building GTest
+loading initial cache file /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/cache.cmake
+loading initial cache file /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/args.cmake
+-- [polly] Used toolchain: clang / c++14 support
+-- The C compiler identification is AppleClang 11.0.0.11000033
+-- The CXX compiler identification is AppleClang 11.0.0.11000033
+-- Check for working C compiler: /usr/bin/clang
+-- Check for working C compiler: /usr/bin/clang - works
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/clang++
+-- Check for working CXX compiler: /usr/bin/clang++ - works
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Build
+Scanning dependencies of target GTest-Release
+[  6%] Creating directories for 'GTest-Release'
+[ 12%] Performing download step (download, verify and extract) for 'GTest-Release'
+-- verifying file...
+       file='/Users/a17661665/projects/hunter/_Base/Download/GTest/1.10.0/9c89be7/release-1.10.0.tar.gz'
+-- File already exists and hash match (skip download):
+  file='/Users/a17661665/projects/hunter/_Base/Download/GTest/1.10.0/9c89be7/release-1.10.0.tar.gz'
+  SHA1='9c89be7df9c5e8cb0bc20b3c4b39bf7e82686770'
+-- extracting...
+     src='/Users/a17661665/projects/hunter/_Base/Download/GTest/1.10.0/9c89be7/release-1.10.0.tar.gz'
+     dst='/Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Source'
+-- extracting... [tar xfz]
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[ 18%] No patch step for 'GTest-Release'
+[ 25%] No update step for 'GTest-Release'
+[ 31%] Performing configure step for 'GTest-Release'
+loading initial cache file /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/cache.cmake
+loading initial cache file /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/args.cmake
+-- [polly] Used toolchain: clang / c++14 support
+-- The C compiler identification is AppleClang 11.0.0.11000033
+-- The CXX compiler identification is AppleClang 11.0.0.11000033
+-- Check for working C compiler: /usr/bin/clang
+-- Check for working C compiler: /usr/bin/clang - works
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/clang++
+-- Check for working CXX compiler: /usr/bin/clang++ - works
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found PythonInterp: /usr/bin/python (found version "2.7.16")
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Build/GTest-Release-prefix/src/GTest-Release-build
+[ 37%] Performing build step for 'GTest-Release'
+Scanning dependencies of target gtest
+[ 12%] Building CXX object googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[ 25%] Linking CXX static library ../lib/libgtest.a
+[ 25%] Built target gtest
+Scanning dependencies of target gtest_main
+Scanning dependencies of target gmock
+[ 37%] Building CXX object googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[ 50%] Building CXX object googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o
+[ 62%] Linking CXX static library ../lib/libgtest_main.a
+[ 62%] Built target gtest_main
+[ 75%] Linking CXX static library ../lib/libgmock.a
+[ 75%] Built target gmock
+Scanning dependencies of target gmock_main
+[ 87%] Building CXX object googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o
+[100%] Linking CXX static library ../lib/libgmock_main.a
+[100%] Built target gmock_main
+[ 43%] Performing install step for 'GTest-Release'
+[ 25%] Built target gtest
+[ 50%] Built target gmock
+[ 75%] Built target gmock_main
+[100%] Built target gtest_main
+Install the project...
+-- Install configuration: "Release"
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/gmock-generated-actions.h.pump
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/gmock-generated-function-mockers.h.pump
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/gmock-matchers.h
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/gmock-more-actions.h
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/gmock-generated-matchers.h.pump
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/gmock-generated-actions.h
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/gmock-generated-matchers.h
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/internal
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/internal/gmock-port.h
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/internal/gmock-internal-utils.h
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/internal/gmock-pp.h
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/internal/custom
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/internal/custom/gmock-generated-actions.h.pump
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/internal/custom/gmock-port.h
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/internal/custom/gmock-matchers.h
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/internal/custom/gmock-generated-actions.h
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/internal/custom/README.md
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/gmock-function-mocker.h
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/gmock-more-matchers.h
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/gmock-generated-function-mockers.h
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/gmock-cardinalities.h
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/gmock-spec-builders.h
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/gmock-nice-strict.h
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/gmock.h
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/gmock-actions.h
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/lib/libgmock.a
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/lib/libgmock_main.a
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/lib/pkgconfig/gmock.pc
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/lib/pkgconfig/gmock_main.pc
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/lib/cmake/GTest/GTestTargets.cmake
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/lib/cmake/GTest/GTestTargets-release.cmake
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/lib/cmake/GTest/GTestConfigVersion.cmake
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/lib/cmake/GTest/GTestConfig.cmake
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/gtest-matchers.h
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/gtest-death-test.h
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/gtest-spi.h
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/internal
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/internal/gtest-string.h
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/internal/gtest-death-test-internal.h
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/internal/gtest-type-util.h.pump
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/internal/gtest-port.h
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/internal/gtest-port-arch.h
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/internal/gtest-internal.h
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/internal/gtest-param-util.h
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/internal/gtest-type-util.h
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/internal/gtest-filepath.h
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/internal/custom
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/internal/custom/gtest-port.h
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/internal/custom/README.md
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/internal/custom/gtest.h
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/internal/custom/gtest-printers.h
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/gtest-message.h
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/gtest-param-test.h
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/gtest-typed-test.h
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/gtest_pred_impl.h
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/gtest_prod.h
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/gtest-test-part.h
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/gtest.h
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/gtest-printers.h
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/lib/libgtest.a
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/lib/libgtest_main.a
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/lib/pkgconfig/gtest.pc
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/lib/pkgconfig/gtest_main.pc
+loading initial cache file /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/args.cmake
+[ 50%] Completed 'GTest-Release'
+[ 50%] Built target GTest-Release
+Scanning dependencies of target GTest-Debug
+[ 56%] Creating directories for 'GTest-Debug'
+[ 62%] Performing download step (download, verify and extract) for 'GTest-Debug'
+-- verifying file...
+       file='/Users/a17661665/projects/hunter/_Base/Download/GTest/1.10.0/9c89be7/release-1.10.0.tar.gz'
+-- File already exists and hash match (skip download):
+  file='/Users/a17661665/projects/hunter/_Base/Download/GTest/1.10.0/9c89be7/release-1.10.0.tar.gz'
+  SHA1='9c89be7df9c5e8cb0bc20b3c4b39bf7e82686770'
+-- extracting...
+     src='/Users/a17661665/projects/hunter/_Base/Download/GTest/1.10.0/9c89be7/release-1.10.0.tar.gz'
+     dst='/Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Source'
+-- extracting... [tar xfz]
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[ 68%] No patch step for 'GTest-Debug'
+[ 75%] No update step for 'GTest-Debug'
+[ 81%] Performing configure step for 'GTest-Debug'
+loading initial cache file /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/cache.cmake
+loading initial cache file /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/args.cmake
+-- [polly] Used toolchain: clang / c++14 support
+-- The C compiler identification is AppleClang 11.0.0.11000033
+-- The CXX compiler identification is AppleClang 11.0.0.11000033
+-- Check for working C compiler: /usr/bin/clang
+-- Check for working C compiler: /usr/bin/clang - works
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/clang++
+-- Check for working CXX compiler: /usr/bin/clang++ - works
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found PythonInterp: /usr/bin/python (found version "2.7.16")
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Build/GTest-Debug-prefix/src/GTest-Debug-build
+[ 87%] Performing build step for 'GTest-Debug'
+Scanning dependencies of target gtest
+[ 12%] Building CXX object googletest/CMakeFiles/gtest.dir/src/gtest-all.cc.o
+[ 25%] Linking CXX static library ../lib/libgtestd.a
+[ 25%] Built target gtest
+Scanning dependencies of target gtest_main
+Scanning dependencies of target gmock
+[ 37%] Building CXX object googletest/CMakeFiles/gtest_main.dir/src/gtest_main.cc.o
+[ 50%] Building CXX object googlemock/CMakeFiles/gmock.dir/src/gmock-all.cc.o
+[ 62%] Linking CXX static library ../lib/libgtest_maind.a
+[ 62%] Built target gtest_main
+[ 75%] Linking CXX static library ../lib/libgmockd.a
+[ 75%] Built target gmock
+Scanning dependencies of target gmock_main
+[ 87%] Building CXX object googlemock/CMakeFiles/gmock_main.dir/src/gmock_main.cc.o
+[100%] Linking CXX static library ../lib/libgmock_maind.a
+[100%] Built target gmock_main
+[ 93%] Performing install step for 'GTest-Debug'
+[ 25%] Built target gtest
+[ 50%] Built target gmock
+[ 75%] Built target gmock_main
+[100%] Built target gtest_main
+Install the project...
+-- Install configuration: "Debug"
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/gmock-generated-actions.h.pump
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/gmock-generated-function-mockers.h.pump
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/gmock-matchers.h
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/gmock-more-actions.h
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/gmock-generated-matchers.h.pump
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/gmock-generated-actions.h
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/gmock-generated-matchers.h
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/internal
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/internal/gmock-port.h
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/internal/gmock-internal-utils.h
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/internal/gmock-pp.h
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/internal/custom
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/internal/custom/gmock-generated-actions.h.pump
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/internal/custom/gmock-port.h
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/internal/custom/gmock-matchers.h
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/internal/custom/gmock-generated-actions.h
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/internal/custom/README.md
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/gmock-function-mocker.h
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/gmock-more-matchers.h
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/gmock-generated-function-mockers.h
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/gmock-cardinalities.h
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/gmock-spec-builders.h
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/gmock-nice-strict.h
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/gmock.h
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gmock/gmock-actions.h
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/lib/libgmockd.a
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/lib/libgmock_maind.a
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/lib/pkgconfig/gmock.pc
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/lib/pkgconfig/gmock_main.pc
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/lib/cmake/GTest/GTestTargets.cmake
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/lib/cmake/GTest/GTestTargets-debug.cmake
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/lib/cmake/GTest/GTestConfigVersion.cmake
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/lib/cmake/GTest/GTestConfig.cmake
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/gtest-matchers.h
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/gtest-death-test.h
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/gtest-spi.h
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/internal
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/internal/gtest-string.h
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/internal/gtest-death-test-internal.h
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/internal/gtest-type-util.h.pump
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/internal/gtest-port.h
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/internal/gtest-port-arch.h
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/internal/gtest-internal.h
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/internal/gtest-param-util.h
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/internal/gtest-type-util.h
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/internal/gtest-filepath.h
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/internal/custom
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/internal/custom/gtest-port.h
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/internal/custom/README.md
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/internal/custom/gtest.h
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/internal/custom/gtest-printers.h
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/gtest-message.h
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/gtest-param-test.h
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/gtest-typed-test.h
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/gtest_pred_impl.h
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/gtest_prod.h
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/gtest-test-part.h
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/gtest.h
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/include/gtest/gtest-printers.h
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/lib/libgtestd.a
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/lib/libgtest_maind.a
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/lib/pkgconfig/gtest.pc
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/Install/lib/pkgconfig/gtest_main.pc
+loading initial cache file /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest/args.cmake
+[100%] Completed 'GTest-Debug'
+[100%] Built target GTest-Debug
+-- [hunter] Build step successful (dir: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/GTest)
+-- [hunter] Cache saved: /Users/a17661665/projects/hunter/_Base/Cache/raw/e201e82505c88bc8004fe67c72dad9e4c350afc0.tar.bz2
+-- [hunter] NLOHMANN_JSON_ROOT: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Install (ver.: 3.7.0)
+-- [hunter] Building nlohmann_json
+loading initial cache file /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/cache.cmake
+loading initial cache file /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/nlohmann_json/args.cmake
+-- [polly] Used toolchain: clang / c++14 support
+-- The C compiler identification is AppleClang 11.0.0.11000033
+-- The CXX compiler identification is AppleClang 11.0.0.11000033
+-- Check for working C compiler: /usr/bin/clang
+-- Check for working C compiler: /usr/bin/clang - works
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/clang++
+-- Check for working CXX compiler: /usr/bin/clang++ - works
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/nlohmann_json/Build
+Scanning dependencies of target nlohmann_json-Release
+[  6%] Creating directories for 'nlohmann_json-Release'
+[ 12%] Performing download step (download, verify and extract) for 'nlohmann_json-Release'
+-- verifying file...
+       file='/Users/a17661665/projects/hunter/_Base/Download/nlohmann_json/3.7.0/d40e66b/v3.7.0.tar.gz'
+-- File already exists and hash match (skip download):
+  file='/Users/a17661665/projects/hunter/_Base/Download/nlohmann_json/3.7.0/d40e66b/v3.7.0.tar.gz'
+  SHA1='d40e66b98392d0cfbd348de029b7822ab5b74e25'
+-- extracting...
+     src='/Users/a17661665/projects/hunter/_Base/Download/nlohmann_json/3.7.0/d40e66b/v3.7.0.tar.gz'
+     dst='/Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/nlohmann_json/Source'
+-- extracting... [tar xfz]
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[ 18%] No patch step for 'nlohmann_json-Release'
+[ 25%] No update step for 'nlohmann_json-Release'
+[ 31%] Performing configure step for 'nlohmann_json-Release'
+loading initial cache file /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/cache.cmake
+loading initial cache file /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/nlohmann_json/args.cmake
+-- [polly] Used toolchain: clang / c++14 support
+-- The CXX compiler identification is AppleClang 11.0.0.11000033
+-- Check for working CXX compiler: /usr/bin/clang++
+-- Check for working CXX compiler: /usr/bin/clang++ - works
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Using the single-header code from /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/nlohmann_json/Source/single_include/
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/nlohmann_json/Build/nlohmann_json-Release-prefix/src/nlohmann_json-Release-build
+[ 37%] Performing build step for 'nlohmann_json-Release'
+[ 43%] Performing install step for 'nlohmann_json-Release'
+Install the project...
+-- Install configuration: "Release"
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/nlohmann_json/Install/include
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/nlohmann_json/Install/include/nlohmann
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/nlohmann_json/Install/include/nlohmann/json.hpp
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/nlohmann_json/Install/lib/cmake/nlohmann_json/nlohmann_jsonConfig.cmake
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/nlohmann_json/Install/lib/cmake/nlohmann_json/nlohmann_jsonConfigVersion.cmake
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/nlohmann_json/Install/lib/cmake/nlohmann_json/nlohmann_jsonTargets.cmake
+loading initial cache file /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/nlohmann_json/args.cmake
+[ 50%] Completed 'nlohmann_json-Release'
+[ 50%] Built target nlohmann_json-Release
+Scanning dependencies of target nlohmann_json-Debug
+[ 56%] Creating directories for 'nlohmann_json-Debug'
+[ 62%] Performing download step (download, verify and extract) for 'nlohmann_json-Debug'
+-- verifying file...
+       file='/Users/a17661665/projects/hunter/_Base/Download/nlohmann_json/3.7.0/d40e66b/v3.7.0.tar.gz'
+-- File already exists and hash match (skip download):
+  file='/Users/a17661665/projects/hunter/_Base/Download/nlohmann_json/3.7.0/d40e66b/v3.7.0.tar.gz'
+  SHA1='d40e66b98392d0cfbd348de029b7822ab5b74e25'
+-- extracting...
+     src='/Users/a17661665/projects/hunter/_Base/Download/nlohmann_json/3.7.0/d40e66b/v3.7.0.tar.gz'
+     dst='/Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/nlohmann_json/Source'
+-- extracting... [tar xfz]
+-- extracting... [analysis]
+-- extracting... [rename]
+-- extracting... [clean up]
+-- extracting... done
+[ 68%] No patch step for 'nlohmann_json-Debug'
+[ 75%] No update step for 'nlohmann_json-Debug'
+[ 81%] Performing configure step for 'nlohmann_json-Debug'
+loading initial cache file /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/cache.cmake
+loading initial cache file /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/nlohmann_json/args.cmake
+-- [polly] Used toolchain: clang / c++14 support
+-- The CXX compiler identification is AppleClang 11.0.0.11000033
+-- Check for working CXX compiler: /usr/bin/clang++
+-- Check for working CXX compiler: /usr/bin/clang++ - works
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Using the single-header code from /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/nlohmann_json/Source/single_include/
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/nlohmann_json/Build/nlohmann_json-Debug-prefix/src/nlohmann_json-Debug-build
+[ 87%] Performing build step for 'nlohmann_json-Debug'
+[ 93%] Performing install step for 'nlohmann_json-Debug'
+Install the project...
+-- Install configuration: "Debug"
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/nlohmann_json/Install/include
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/nlohmann_json/Install/include/nlohmann
+-- Up-to-date: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/nlohmann_json/Install/include/nlohmann/json.hpp
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/nlohmann_json/Install/lib/cmake/nlohmann_json/nlohmann_jsonConfig.cmake
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/nlohmann_json/Install/lib/cmake/nlohmann_json/nlohmann_jsonConfigVersion.cmake
+-- Installing: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/nlohmann_json/Install/lib/cmake/nlohmann_json/nlohmann_jsonTargets.cmake
+loading initial cache file /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/nlohmann_json/args.cmake
+[100%] Completed 'nlohmann_json-Debug'
+[100%] Built target nlohmann_json-Debug
+-- [hunter] Build step successful (dir: /Users/a17661665/projects/hunter/_Base/xxxxxxx/2e00d17/b97958b/Build/nlohmann_json)
+-- [hunter] Cache saved: /Users/a17661665/projects/hunter/_Base/Cache/raw/1360f10986df90f1d01935842b9fe2bf49a94b0c.tar.bz2
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /Users/a17661665/Git/pelpro/workspace/projects/lab07/_builds/clang-cxx14
+Execute command: [
+  `cmake`
+  `--build`
+  `/Users/a17661665/Git/pelpro/workspace/projects/lab07/_builds/clang-cxx14`
+  `--`
+]
+[/Users/a17661665/Git/pelpro/workspace/projects/lab07]> "cmake" "--build" "/Users/a17661665/Git/pelpro/workspace/projects/lab07/_builds/clang-cxx14" "--"
+Scanning dependencies of target print
+[  7%] Building CXX object CMakeFiles/print.dir/sources/print.cpp.o
+[ 14%] Linking CXX static library libprint.a
+[ 14%] Built target print
+Scanning dependencies of target demo
+[ 21%] Building CXX object CMakeFiles/demo.dir/demo/main.cpp.o
+[ 28%] Linking CXX executable demo
+[ 28%] Built target demo
+[ 35%] Building CXX object ../../formatter_lib/CMakeFiles/formatter.dir/formatter.cpp.o
+[ 42%] Linking CXX static library libformatter.a
+[ 42%] Built target formatter
+[ 50%] Building CXX object ../../formatter_ex_lib/CMakeFiles/formatter_ex.dir/formatter_ex.cpp.o
+[ 57%] Linking CXX static library libformatter_ex.a
+[ 57%] Built target formatter_ex
+[ 64%] Building CXX object ../../solver_lib/CMakeFiles/solver.dir/solver.cpp.o
+[ 71%] Linking CXX static library libsolver.a
+[ 71%] Built target solver
+[ 78%] Building CXX object ../../hello_world_application/CMakeFiles/hello_world.dir/hello_world.cpp.o
+[ 85%] Linking CXX executable hello_world
+[ 85%] Built target hello_world
+[ 92%] Building CXX object ../../solver_application/CMakeFiles/equation.dir/equation.cpp.o
+[100%] Linking CXX executable equation
+[100%] Built target equation

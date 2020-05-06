@@ -4,13 +4,13 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/a17661665/Git/pelpro/workspace/projects/lab06/hello_world_application/hello_world.cpp" "/Users/a17661665/Git/pelpro/workspace/projects/lab06/hello_world_application/CMakeFiles/hello_world.dir/hello_world.cpp.o"
+  "/Users/a17661665/Git/pelpro/workspace/projects/lab07/hello_world_application/hello_world.cpp" "/Users/a17661665/Git/pelpro/workspace/projects/lab07/hello_world_application/CMakeFiles/hello_world.dir/hello_world.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "../formatter_ex_lib"
+  "../../formatter_ex_lib"
   )
 
 # Targets to which this target links.
