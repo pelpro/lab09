@@ -63,10 +63,10 @@ RM = /usr/local/Cellar/cmake/3.17.2/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/a17661665/Git/pelpro/workspace/projects/lab05
+CMAKE_SOURCE_DIR = /Users/a17661665/Git/pelpro/workspace/projects/lab06
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/a17661665/Git/pelpro/workspace/projects/lab05/_build
+CMAKE_BINARY_DIR = /Users/a17661665/Git/pelpro/workspace/projects/lab06/_build
 
 # Include any dependencies generated for this target.
 include ../formatter_ex_lib/CMakeFiles/formatter_ex.dir/depend.make
@@ -79,16 +79,16 @@ include ../formatter_ex_lib/CMakeFiles/formatter_ex.dir/flags.make
 
 ../formatter_ex_lib/CMakeFiles/formatter_ex.dir/formatter_ex.cpp.o: ../formatter_ex_lib/CMakeFiles/formatter_ex.dir/flags.make
 ../formatter_ex_lib/CMakeFiles/formatter_ex.dir/formatter_ex.cpp.o: ../formatter_ex_lib/formatter_ex.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/a17661665/Git/pelpro/workspace/projects/lab05/_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object ../formatter_ex_lib/CMakeFiles/formatter_ex.dir/formatter_ex.cpp.o"
-	cd /Users/a17661665/Git/pelpro/workspace/projects/lab05/formatter_ex_lib && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/formatter_ex.dir/formatter_ex.cpp.o -c /Users/a17661665/Git/pelpro/workspace/projects/lab05/formatter_ex_lib/formatter_ex.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/a17661665/Git/pelpro/workspace/projects/lab06/_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object ../formatter_ex_lib/CMakeFiles/formatter_ex.dir/formatter_ex.cpp.o"
+	cd /Users/a17661665/Git/pelpro/workspace/projects/lab06/formatter_ex_lib && /Library/Developer/CommandLineTools/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/formatter_ex.dir/formatter_ex.cpp.o -c /Users/a17661665/Git/pelpro/workspace/projects/lab06/formatter_ex_lib/formatter_ex.cpp
 
 ../formatter_ex_lib/CMakeFiles/formatter_ex.dir/formatter_ex.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/formatter_ex.dir/formatter_ex.cpp.i"
-	cd /Users/a17661665/Git/pelpro/workspace/projects/lab05/formatter_ex_lib && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/a17661665/Git/pelpro/workspace/projects/lab05/formatter_ex_lib/formatter_ex.cpp > CMakeFiles/formatter_ex.dir/formatter_ex.cpp.i
+	cd /Users/a17661665/Git/pelpro/workspace/projects/lab06/formatter_ex_lib && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/a17661665/Git/pelpro/workspace/projects/lab06/formatter_ex_lib/formatter_ex.cpp > CMakeFiles/formatter_ex.dir/formatter_ex.cpp.i
 
 ../formatter_ex_lib/CMakeFiles/formatter_ex.dir/formatter_ex.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/formatter_ex.dir/formatter_ex.cpp.s"
-	cd /Users/a17661665/Git/pelpro/workspace/projects/lab05/formatter_ex_lib && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/a17661665/Git/pelpro/workspace/projects/lab05/formatter_ex_lib/formatter_ex.cpp -o CMakeFiles/formatter_ex.dir/formatter_ex.cpp.s
+	cd /Users/a17661665/Git/pelpro/workspace/projects/lab06/formatter_ex_lib && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/a17661665/Git/pelpro/workspace/projects/lab06/formatter_ex_lib/formatter_ex.cpp -o CMakeFiles/formatter_ex.dir/formatter_ex.cpp.s
 
 # Object files for target formatter_ex
 formatter_ex_OBJECTS = \
@@ -100,9 +100,9 @@ formatter_ex_EXTERNAL_OBJECTS =
 ../formatter_ex_lib/libformatter_ex.a: ../formatter_ex_lib/CMakeFiles/formatter_ex.dir/formatter_ex.cpp.o
 ../formatter_ex_lib/libformatter_ex.a: ../formatter_ex_lib/CMakeFiles/formatter_ex.dir/build.make
 ../formatter_ex_lib/libformatter_ex.a: ../formatter_ex_lib/CMakeFiles/formatter_ex.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/a17661665/Git/pelpro/workspace/projects/lab05/_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libformatter_ex.a"
-	cd /Users/a17661665/Git/pelpro/workspace/projects/lab05/formatter_ex_lib && $(CMAKE_COMMAND) -P CMakeFiles/formatter_ex.dir/cmake_clean_target.cmake
-	cd /Users/a17661665/Git/pelpro/workspace/projects/lab05/formatter_ex_lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/formatter_ex.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/a17661665/Git/pelpro/workspace/projects/lab06/_build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libformatter_ex.a"
+	cd /Users/a17661665/Git/pelpro/workspace/projects/lab06/formatter_ex_lib && $(CMAKE_COMMAND) -P CMakeFiles/formatter_ex.dir/cmake_clean_target.cmake
+	cd /Users/a17661665/Git/pelpro/workspace/projects/lab06/formatter_ex_lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/formatter_ex.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 ../formatter_ex_lib/CMakeFiles/formatter_ex.dir/build: ../formatter_ex_lib/libformatter_ex.a
@@ -110,10 +110,10 @@ formatter_ex_EXTERNAL_OBJECTS =
 .PHONY : ../formatter_ex_lib/CMakeFiles/formatter_ex.dir/build
 
 ../formatter_ex_lib/CMakeFiles/formatter_ex.dir/clean:
-	cd /Users/a17661665/Git/pelpro/workspace/projects/lab05/formatter_ex_lib && $(CMAKE_COMMAND) -P CMakeFiles/formatter_ex.dir/cmake_clean.cmake
+	cd /Users/a17661665/Git/pelpro/workspace/projects/lab06/formatter_ex_lib && $(CMAKE_COMMAND) -P CMakeFiles/formatter_ex.dir/cmake_clean.cmake
 .PHONY : ../formatter_ex_lib/CMakeFiles/formatter_ex.dir/clean
 
 ../formatter_ex_lib/CMakeFiles/formatter_ex.dir/depend:
-	cd /Users/a17661665/Git/pelpro/workspace/projects/lab05/_build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/a17661665/Git/pelpro/workspace/projects/lab05 /Users/a17661665/Git/pelpro/workspace/projects/lab05/formatter_ex_lib /Users/a17661665/Git/pelpro/workspace/projects/lab05/_build /Users/a17661665/Git/pelpro/workspace/projects/lab05/formatter_ex_lib /Users/a17661665/Git/pelpro/workspace/projects/lab05/formatter_ex_lib/CMakeFiles/formatter_ex.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/a17661665/Git/pelpro/workspace/projects/lab06/_build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/a17661665/Git/pelpro/workspace/projects/lab06 /Users/a17661665/Git/pelpro/workspace/projects/lab06/formatter_ex_lib /Users/a17661665/Git/pelpro/workspace/projects/lab06/_build /Users/a17661665/Git/pelpro/workspace/projects/lab06/formatter_ex_lib /Users/a17661665/Git/pelpro/workspace/projects/lab06/formatter_ex_lib/CMakeFiles/formatter_ex.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : ../formatter_ex_lib/CMakeFiles/formatter_ex.dir/depend
 

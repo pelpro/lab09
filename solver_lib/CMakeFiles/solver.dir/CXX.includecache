@@ -6,13 +6,13 @@
 
 #IncludeRegexTransform: 
 
-/Users/a17661665/Git/pelpro/workspace/projects/lab05/solver_lib/solver.cpp
+/Users/a17661665/Git/pelpro/workspace/projects/lab06/solver_lib/solver.cpp
 solver.h
-/Users/a17661665/Git/pelpro/workspace/projects/lab05/solver_lib/solver.h
+/Users/a17661665/Git/pelpro/workspace/projects/lab06/solver_lib/solver.h
 stdexcept
 -
 cmath
 -
 
-/Users/a17661665/Git/pelpro/workspace/projects/lab05/solver_lib/solver.h
+/Users/a17661665/Git/pelpro/workspace/projects/lab06/solver_lib/solver.h
 

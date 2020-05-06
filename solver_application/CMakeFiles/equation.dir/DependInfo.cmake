@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/a17661665/Git/pelpro/workspace/projects/lab05/solver_application/equation.cpp" "/Users/a17661665/Git/pelpro/workspace/projects/lab05/solver_application/CMakeFiles/equation.dir/equation.cpp.o"
+  "/Users/a17661665/Git/pelpro/workspace/projects/lab06/solver_application/equation.cpp" "/Users/a17661665/Git/pelpro/workspace/projects/lab06/solver_application/CMakeFiles/equation.dir/equation.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/a17661665/Git/pelpro/workspace/projects/lab05/formatter_ex_lib/formatter_ex.cpp" "/Users/a17661665/Git/pelpro/workspace/projects/lab05/formatter_ex_lib/CMakeFiles/formatter_ex.dir/formatter_ex.cpp.o"
+  "/Users/a17661665/Git/pelpro/workspace/projects/lab06/formatter_ex_lib/formatter_ex.cpp" "/Users/a17661665/Git/pelpro/workspace/projects/lab06/formatter_ex_lib/CMakeFiles/formatter_ex.dir/formatter_ex.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

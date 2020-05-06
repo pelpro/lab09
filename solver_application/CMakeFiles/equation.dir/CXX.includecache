@@ -14,11 +14,11 @@ iostream
 
 ../solver_lib/solver.h
 
-/Users/a17661665/Git/pelpro/workspace/projects/lab05/solver_application/equation.cpp
+/Users/a17661665/Git/pelpro/workspace/projects/lab06/solver_application/equation.cpp
 iostream
 -
 formatter_ex.h
-/Users/a17661665/Git/pelpro/workspace/projects/lab05/solver_application/formatter_ex.h
+/Users/a17661665/Git/pelpro/workspace/projects/lab06/solver_application/formatter_ex.h
 solver.h
-/Users/a17661665/Git/pelpro/workspace/projects/lab05/solver_application/solver.h
+/Users/a17661665/Git/pelpro/workspace/projects/lab06/solver_application/solver.h
 

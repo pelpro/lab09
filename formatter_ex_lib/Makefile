@@ -68,47 +68,13 @@ RM = /usr/local/Cellar/cmake/3.17.2/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/a17661665/Git/pelpro/workspace/projects/lab05
+CMAKE_SOURCE_DIR = /Users/a17661665/Git/pelpro/workspace/projects/lab06
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/a17661665/Git/pelpro/workspace/projects/lab05/_build
+CMAKE_BINARY_DIR = /Users/a17661665/Git/pelpro/workspace/projects/lab06/_build
 
 #=============================================================================
 # Targets provided globally by CMake.
-
-# Special rule for the target install/strip
-install/strip: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/Cellar/cmake/3.17.2/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip
-
-# Special rule for the target install/strip
-install/strip/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing the project stripped..."
-	/usr/local/Cellar/cmake/3.17.2/bin/cmake -DCMAKE_INSTALL_DO_STRIP=1 -P cmake_install.cmake
-.PHONY : install/strip/fast
-
-# Special rule for the target install
-install: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/Cellar/cmake/3.17.2/bin/cmake -P cmake_install.cmake
-.PHONY : install
-
-# Special rule for the target install
-install/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Install the project..."
-	/usr/local/Cellar/cmake/3.17.2/bin/cmake -P cmake_install.cmake
-.PHONY : install/fast
-
-# Special rule for the target list_install_components
-list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
-.PHONY : list_install_components
-
-# Special rule for the target list_install_components
-list_install_components/fast: list_install_components
-
-.PHONY : list_install_components/fast
 
 # Special rule for the target rebuild_cache
 rebuild_cache:
@@ -132,39 +98,38 @@ edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
 
-# Special rule for the target install/local
-install/local: preinstall
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/Cellar/cmake/3.17.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local
+# Special rule for the target package_source
+package_source:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool for source..."
+	cd /Users/a17661665/Git/pelpro/workspace/projects/lab06/_build && /usr/local/Cellar/cmake/3.17.2/bin/cpack --config ./CPackSourceConfig.cmake /Users/a17661665/Git/pelpro/workspace/projects/lab06/_build/CPackSourceConfig.cmake
+.PHONY : package_source
 
-# Special rule for the target install/local
-install/local/fast: preinstall/fast
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Installing only the local directory..."
-	/usr/local/Cellar/cmake/3.17.2/bin/cmake -DCMAKE_INSTALL_LOCAL_ONLY=1 -P cmake_install.cmake
-.PHONY : install/local/fast
+# Special rule for the target package_source
+package_source/fast: package_source
 
-# Special rule for the target test
-test:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running tests..."
-	/usr/local/Cellar/cmake/3.17.2/bin/ctest --force-new-ctest-process $(ARGS)
-.PHONY : test
+.PHONY : package_source/fast
 
-# Special rule for the target test
-test/fast: test
+# Special rule for the target package
+package: preinstall
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Run CPack packaging tool..."
+	cd /Users/a17661665/Git/pelpro/workspace/projects/lab06/_build && /usr/local/Cellar/cmake/3.17.2/bin/cpack --config ./CPackConfig.cmake
+.PHONY : package
 
-.PHONY : test/fast
+# Special rule for the target package
+package/fast: package
+
+.PHONY : package/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/a17661665/Git/pelpro/workspace/projects/lab05/_build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/a17661665/Git/pelpro/workspace/projects/lab05/_build/CMakeFiles /Users/a17661665/Git/pelpro/workspace/projects/lab05/formatter_ex_lib/CMakeFiles/progress.marks
-	cd /Users/a17661665/Git/pelpro/workspace/projects/lab05/_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ../formatter_ex_lib/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/a17661665/Git/pelpro/workspace/projects/lab05/_build/CMakeFiles 0
+	cd /Users/a17661665/Git/pelpro/workspace/projects/lab06/_build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/a17661665/Git/pelpro/workspace/projects/lab06/_build/CMakeFiles /Users/a17661665/Git/pelpro/workspace/projects/lab06/formatter_ex_lib/CMakeFiles/progress.marks
+	cd /Users/a17661665/Git/pelpro/workspace/projects/lab06/_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ../formatter_ex_lib/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/a17661665/Git/pelpro/workspace/projects/lab06/_build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/a17661665/Git/pelpro/workspace/projects/lab05/_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ../formatter_ex_lib/clean
+	cd /Users/a17661665/Git/pelpro/workspace/projects/lab06/_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ../formatter_ex_lib/clean
 .PHONY : clean
 
 # The main clean target
@@ -174,22 +139,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/a17661665/Git/pelpro/workspace/projects/lab05/_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ../formatter_ex_lib/preinstall
+	cd /Users/a17661665/Git/pelpro/workspace/projects/lab06/_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ../formatter_ex_lib/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/a17661665/Git/pelpro/workspace/projects/lab05/_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ../formatter_ex_lib/preinstall
+	cd /Users/a17661665/Git/pelpro/workspace/projects/lab06/_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ../formatter_ex_lib/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/a17661665/Git/pelpro/workspace/projects/lab05/_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/a17661665/Git/pelpro/workspace/projects/lab06/_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 ../formatter_ex_lib/CMakeFiles/formatter_ex.dir/rule:
-	cd /Users/a17661665/Git/pelpro/workspace/projects/lab05/_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ../formatter_ex_lib/CMakeFiles/formatter_ex.dir/rule
+	cd /Users/a17661665/Git/pelpro/workspace/projects/lab06/_build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ../formatter_ex_lib/CMakeFiles/formatter_ex.dir/rule
 .PHONY : ../formatter_ex_lib/CMakeFiles/formatter_ex.dir/rule
 
 # Convenience name for target.
@@ -199,7 +164,7 @@ formatter_ex: ../formatter_ex_lib/CMakeFiles/formatter_ex.dir/rule
 
 # fast build rule for target.
 formatter_ex/fast:
-	cd /Users/a17661665/Git/pelpro/workspace/projects/lab05/_build && $(MAKE) $(MAKESILENT) -f ../formatter_ex_lib/CMakeFiles/formatter_ex.dir/build.make ../formatter_ex_lib/CMakeFiles/formatter_ex.dir/build
+	cd /Users/a17661665/Git/pelpro/workspace/projects/lab06/_build && $(MAKE) $(MAKESILENT) -f ../formatter_ex_lib/CMakeFiles/formatter_ex.dir/build.make ../formatter_ex_lib/CMakeFiles/formatter_ex.dir/build
 .PHONY : formatter_ex/fast
 
 formatter_ex.o: formatter_ex.cpp.o
@@ -208,7 +173,7 @@ formatter_ex.o: formatter_ex.cpp.o
 
 # target to build an object file
 formatter_ex.cpp.o:
-	cd /Users/a17661665/Git/pelpro/workspace/projects/lab05/_build && $(MAKE) $(MAKESILENT) -f ../formatter_ex_lib/CMakeFiles/formatter_ex.dir/build.make ../formatter_ex_lib/CMakeFiles/formatter_ex.dir/formatter_ex.cpp.o
+	cd /Users/a17661665/Git/pelpro/workspace/projects/lab06/_build && $(MAKE) $(MAKESILENT) -f ../formatter_ex_lib/CMakeFiles/formatter_ex.dir/build.make ../formatter_ex_lib/CMakeFiles/formatter_ex.dir/formatter_ex.cpp.o
 .PHONY : formatter_ex.cpp.o
 
 formatter_ex.i: formatter_ex.cpp.i
@@ -217,7 +182,7 @@ formatter_ex.i: formatter_ex.cpp.i
 
 # target to preprocess a source file
 formatter_ex.cpp.i:
-	cd /Users/a17661665/Git/pelpro/workspace/projects/lab05/_build && $(MAKE) $(MAKESILENT) -f ../formatter_ex_lib/CMakeFiles/formatter_ex.dir/build.make ../formatter_ex_lib/CMakeFiles/formatter_ex.dir/formatter_ex.cpp.i
+	cd /Users/a17661665/Git/pelpro/workspace/projects/lab06/_build && $(MAKE) $(MAKESILENT) -f ../formatter_ex_lib/CMakeFiles/formatter_ex.dir/build.make ../formatter_ex_lib/CMakeFiles/formatter_ex.dir/formatter_ex.cpp.i
 .PHONY : formatter_ex.cpp.i
 
 formatter_ex.s: formatter_ex.cpp.s
@@ -226,7 +191,7 @@ formatter_ex.s: formatter_ex.cpp.s
 
 # target to generate assembly for a file
 formatter_ex.cpp.s:
-	cd /Users/a17661665/Git/pelpro/workspace/projects/lab05/_build && $(MAKE) $(MAKESILENT) -f ../formatter_ex_lib/CMakeFiles/formatter_ex.dir/build.make ../formatter_ex_lib/CMakeFiles/formatter_ex.dir/formatter_ex.cpp.s
+	cd /Users/a17661665/Git/pelpro/workspace/projects/lab06/_build && $(MAKE) $(MAKESILENT) -f ../formatter_ex_lib/CMakeFiles/formatter_ex.dir/build.make ../formatter_ex_lib/CMakeFiles/formatter_ex.dir/formatter_ex.cpp.s
 .PHONY : formatter_ex.cpp.s
 
 # Help Target
@@ -236,12 +201,9 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
-	@echo "... install"
-	@echo "... install/local"
-	@echo "... install/strip"
-	@echo "... list_install_components"
+	@echo "... package"
+	@echo "... package_source"
 	@echo "... rebuild_cache"
-	@echo "... test"
 	@echo "... formatter_ex"
 	@echo "... formatter_ex.o"
 	@echo "... formatter_ex.i"
@@ -257,6 +219,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/a17661665/Git/pelpro/workspace/projects/lab05/_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/a17661665/Git/pelpro/workspace/projects/lab06/_build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
