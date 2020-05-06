@@ -3,8 +3,7 @@ os: linux
 script:
 - cmake -H. -B_build -DBUILD_TESTS=ON
 - cmake --build _build
-- cmake --build _build --target test -- ARGS=--verbose
-- cpack -G DEB
+- cd _build && cpack -G DEB && cd ..
 deploy:
   provider: releases
   api_key:
