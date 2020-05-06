@@ -30,7 +30,7 @@ TEST(Transaction, TransactionMock)
         EXPECT_CALL(second, ChangeBalance(200))
                 .Times(1);
         EXPECT_CALL(first, ChangeBalance(-201))
-                .Times(1);
+                .Times(0);
         EXPECT_CALL(first, Unlock())
                 .Times(1);
         EXPECT_CALL(second, Unlock())
@@ -65,8 +65,8 @@ TEST(Transaction, TransactionEnough)
         Account first(1, 1000), second(2, 1000);
         Transaction transaction;
         transaction.Make(first, second, 200);
-        EXPECT_EQ(first.GetBalance(), 799);
-        EXPECT_EQ(second.GetBalance(), 1200);
+        EXPECT_EQ(first.GetBalance(), 1000);
+        EXPECT_EQ(second.GetBalance(), 999);
 }
 
 TEST(Transaction, TransactionNotEnoughFunds)
