@@ -50,7 +50,7 @@ TEST(Transaction, TransactionNegative)
 {
         MockAccount first(1, 1000), second(2, 1000);
         Transaction transaction;
-        EXPECT_THROW(transaction.Make(first, second, -1), std::invalid_argument);
+        EXPECT_THROW(transaction.Make(first, second, -100), std::invalid_argument);
 }
 
 TEST(Transaction, TransactionSmall)
