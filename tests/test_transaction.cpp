@@ -27,10 +27,6 @@ TEST(Transaction, TransactionMock)
                 .Times(1);
         EXPECT_CALL(second, Lock())
                 .Times(1);
-        EXPECT_CALL(second, ChangeBalance(500))
-                .Times(1);
-        EXPECT_CALL(first, ChangeBalance(-501))
-                .Times(1);
         EXPECT_CALL(first, Unlock())
                 .Times(1);
         EXPECT_CALL(second, Unlock())
