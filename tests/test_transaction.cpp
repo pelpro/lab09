@@ -29,7 +29,7 @@ TEST(Transaction, TransactionMock)
                 .Times(1);
         EXPECT_CALL(second, ChangeBalance(100))
                 .Times(1);
-        EXPECT_CALL(first, ChangeBalance(-100))
+        EXPECT_CALL(first, ChangeBalance(-101))
                 .Times(1);
         EXPECT_CALL(first, Unlock())
                 .Times(1);
@@ -64,9 +64,9 @@ TEST(Transaction, TransactionEnough)
 {
         Account first(1, 1000), second(2, 1000);
         Transaction transaction;
-        transaction.Make(first, second, 100);
-        EXPECT_EQ(first.GetBalance(), 900);
-        EXPECT_EQ(second.GetBalance(), 999);
+        transaction.Make(first, second, 101);
+        EXPECT_EQ(first.GetBalance(), 899);
+        EXPECT_EQ(second.GetBalance(), 1100);
 }
 
 TEST(Transaction, TransactionNotEnoughFunds)
