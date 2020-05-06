@@ -8,7 +8,7 @@ using::testing::AtLeast;
 using::testing::DoAll;
 using::testing::Return;
 
-class AccountMock: public Account {
+class MockAccount: public Account {
 public:
 	MockAccount(int id, int sum) : Account(id, sum) {}
         MOCK_METHOD0(id, int());
