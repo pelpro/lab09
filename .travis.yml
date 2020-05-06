@@ -1,15 +1,14 @@
 language: cpp
-os: osx
+os: linux
 script:
 - cmake -H. -B_build -DBUILD_TESTS=ON
 - cmake --build _build
 - cmake --build _build --target test -- ARGS=--verbose
-- cpack -G DragNDrop
 deploy:
   provider: releases
   api_key:
     secure: O08K8ZpLbSms6yULuUFrzWqf/pT915PxB7cc76YF9W2UzPd/bz1Cuu4AsI/kpmanenbJk+TNFA14EMv4Wx0PNvEFJOMqrXRTJJ3vHyJ9Pg+NdfNcHj63ry/aVMJKZ1Jd/mMaMxdWJDlEHMwrwGBrxVg/mWu/xc2ovmE1c1cmkhd2j3jk3+hHao0/QJE2Ql+N2VkFPlMxDLHQZbLCrRz8cMGmGPRhN+PZiwbm86vmGYAARbpsb7B2I7Sg0v9dxHhzxYpKbpntFN3VVQfnU1zFdr3HFnLSDUB6w5mn0T8lWHulAq+xwePnlt+2CP7fiqZKuhlGAJteClfQvaZjEhxP8/as54GT0KUeDUpjbiy32gajzXSC3nZ/4gchkucmo2nVpE5ihETmSPmNj4QcMdHMNYjUhzOA6MWRFGoYFnjJQHpFkxpsWkR0coybYXOYGv0jlMUPm53j2MR4Bc233UcN6u86HqGtdq5h6igjy9bpEoEvTWxlVF0wzPQ7EhFajxzXUK80GcNOwNf7whzgBlg+omxLXwkoWWt/zF3w5FzFfGIrctZwnL0hKSS163tY13CuQwxvjir+0zhuPtCB8NfAACxQDqgeIivZ7Kh5zHup2AaGRTHD9q5sHMoI2wOkvJRxkowQ4XHH8zdB7KhkbQ5JsB2ME6Pe5fcSuM8wcuVZD5g=
-  file: _build/print-...-Darwin.tar.gz
+  file: _build/print-...-Linux.deb
   on:
     repo: pelpro/lab06
     tags: true
