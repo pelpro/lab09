@@ -27,16 +27,16 @@ TEST(Transaction, TransactionMock)
                 .Times(1);
         EXPECT_CALL(second, Lock())
                 .Times(1);
-        EXPECT_CALL(second, ChangeBalance(-201))
+        EXPECT_CALL(second, ChangeBalance(500))
                 .Times(1);
-        EXPECT_CALL(first, ChangeBalance(-201))
-                .Times(0);
+        EXPECT_CALL(first, ChangeBalance(-501))
+                .Times(1);
         EXPECT_CALL(first, Unlock())
                 .Times(1);
         EXPECT_CALL(second, Unlock())
                 .Times(1);
 
-        transaction.Make(first, second, 200);
+        transaction.Make(first, second, 500);
 }
 
 TEST(Transaction, TransactionInvalid)
