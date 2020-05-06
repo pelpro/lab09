@@ -66,7 +66,7 @@ TEST(Transaction, TransactionEnough)
         Transaction transaction;
         transaction.Make(first, second, 100);
         EXPECT_EQ(first.GetBalance(), 900);
-        EXPECT_EQ(second.GetBalance(), 1100);
+        EXPECT_EQ(second.GetBalance(), 999);
 }
 
 TEST(Transaction, TransactionNotEnoughFunds)
@@ -77,7 +77,7 @@ TEST(Transaction, TransactionNotEnoughFunds)
 
 	EXPECT_EQ(first.GetBalance(), 1000);
         EXPECT_EQ(second
-		  .GetBalance(), 1000);
+		  .GetBalance(), 999);
 
 }
 
